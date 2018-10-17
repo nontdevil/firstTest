@@ -29,3 +29,4 @@ button.push_handlers(on_click=buttonClicked)
 pyglet.app.run()
 #test\
 #asdasd
+#asd
