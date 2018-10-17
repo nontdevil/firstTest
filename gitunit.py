@@ -1,4 +1,6 @@
 #clean start
+
+"""
 import pyglet
 import glooey
 
@@ -18,7 +20,8 @@ button = glooey.Button("Click Here!")
 
 
 def buttonClicked(widget):
-    print("Clicked!")
+    print(form.text)
+
 
 button.push_handlers(on_click=buttonClicked)
 
@@ -29,3 +32,6 @@ rows.add(label2)
 rows.add(label3)
 
 pyglet.app.run()
+"""
+
+#passwordChecker
