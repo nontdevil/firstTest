@@ -7,7 +7,7 @@ mainGui = glooey.Gui(mainWindow)
 rows = glooey.VBox()
 col = glooey.HBox()
 mainGui.add(rows)
-backgroud = "#FF0000"
+background = "#FF0000"
 label = glooey.Label("Hello World")
 label2 = glooey.Label("Hello Banana")
 label3 = glooey.Label("Hello Cantaloupe")
@@ -19,6 +19,7 @@ button = glooey.Button("Click Here!")
 
 def buttonClicked(widget):
     print("Clicked!")
+
 button.push_handlers(on_click=buttonClicked)
 
 rows.add(button)
