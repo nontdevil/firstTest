@@ -3,13 +3,26 @@ import pyglet
 import glooey
 
 #passwordChecker
+
+class PandaLabel(glooey.Label):
+    custom_font_size = 25
+    custom_alignment = "center"
+    custom_color = "ffe215"
+    custom_bold = True
+
+class TheButton(glooey.Button):
+    custom_font_size = 15
+    custom_alignment = "center"
+    custom_color = "ff0000"
+    custom_bold = False
+
 mainWindow = pyglet.window.Window()
 mainGui = glooey.Gui(mainWindow)
 rows = glooey.VBox()
 mainGui.add(rows)
-title = glooey.Label("Welcome to Password Checker")
+title = PandaLabel("Welcome to Password Checker")
 enterPassword = glooey.Form()
-button = glooey.Button("Check Password")
+button = TheButton("Check Password")
 result = glooey.Label("")
 
 def buttonClicked(widget):
