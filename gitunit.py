@@ -27,6 +27,3 @@ rows.add(result)
 button.push_handlers(on_click=buttonClicked)
 
 pyglet.app.run()
-#test\
-#asdasd
-#asddfgh
