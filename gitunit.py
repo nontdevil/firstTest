@@ -11,10 +11,17 @@ class PandaLabel(glooey.Label):
     custom_bold = True
 
 class TheButton(glooey.Button):
-    custom_font_size = 15
-    custom_alignment = "center"
-    custom_color = "ff0000"
-    custom_bold = False
+    class Label(glooey.Label):
+        custom_padding = 10
+    class Base(glooey.images.Background):
+        custom_outline = "00ffff"
+        custom_color = "000000"
+    class Over(glooey.images.Background):
+        custom_outline = "00ffff"
+        custom_color = "000000"
+    class Down(glooey.images.Background):
+        custom_outline = "00ffff"
+        custom_color = "000000"
 class Result(glooey.Label):
     custom_font_size = 15
     custom_alignment = "left"
@@ -26,7 +33,7 @@ rows = glooey.VBox()
 mainGui.add(rows)
 title = PandaLabel("Welcome to Password Checker")
 enterPassword = glooey.Form()
-button = glooey.Button("Check Password")
+button = TheButton("Check Password")
 result = Result("")
 
 def buttonClicked(widget):
