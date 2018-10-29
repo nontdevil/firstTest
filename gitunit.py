@@ -41,7 +41,6 @@ class SomeFrame(glooey.Frame):
 mainWindow = pyglet.window.Window()
 mainGui = glooey.Gui(mainWindow)
 rows = glooey.VBox()
-mainGui.add(rows)
 title = PandaLabel("Welcome to Password Checker")
 enterPassword = glooey.Form()
 button = TheButton("Check Password")
@@ -68,5 +67,6 @@ rows.add(result)
 button.push_handlers(on_click=buttonClicked)
 frame.add(rows)
 
+mainGui.add(frame)
 pyglet.app.run()
 #fix
