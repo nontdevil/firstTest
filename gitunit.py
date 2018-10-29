@@ -14,14 +14,14 @@ class TheButton(glooey.Button):
     class Label(glooey.Label):
         custom_padding = 10
     class Base(glooey.images.Background):
-        custom_outline = "00ffff"
-        custom_color = "000000"
+        custom_outline = "ffffff"
+        custom_color = "00ffad"
     class Over(glooey.images.Background):
-        custom_outline = "00ffff"
-        custom_color = "000000"
+        custom_outline = "ffffff"
+        custom_color = "0000ff"
     class Down(glooey.images.Background):
-        custom_outline = "00ffff"
-        custom_color = "000000"
+        custom_outline = "00ff00"
+        custom_color = "00ff00"
 class Result(glooey.Label):
     custom_font_size = 15
     custom_alignment = "left"
