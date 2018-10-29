@@ -60,12 +60,13 @@ def buttonClicked(widget):
 
 frame = SomeFrame()
 
-rows.add(frame)
+
 rows.add(title)
 rows.add(enterPassword)
 rows.add(button)
 rows.add(result)
 button.push_handlers(on_click=buttonClicked)
+frame.add(rows)
 
 pyglet.app.run()
 #fix
