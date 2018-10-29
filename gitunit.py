@@ -61,7 +61,6 @@ def buttonClicked(widget):
 frame = SomeFrame()
 
 rows.add(frame)
-rows.add(form)
 rows.add(title)
 rows.add(enterPassword)
 rows.add(button)
