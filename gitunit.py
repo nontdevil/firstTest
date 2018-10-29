@@ -31,10 +31,10 @@ class Result(glooey.Label):
 
 class SomeFrame(glooey.Frame):
     class Decoration(glooey.images.Background):
-        custom_color = "ff35ad"
+        custom_color = "00ffa5"
         custom_outline = "000000"
     class Box(glooey.Bin):
-        custom_padding = 5
+        custom_padding = 2
 
 
 
