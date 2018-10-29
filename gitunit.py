@@ -27,6 +27,17 @@ class Result(glooey.Label):
     custom_alignment = "left"
     custom_color = "ff0000"
     custom_bold = True
+
+
+class SomeFrame(glooey.Frame):
+    class Decoration(glooey.images.Background):
+        custom_color = "ff35ad"
+        custom_outline = "000000"
+    class Box(glooey.Bin):
+        custom_padding = 5
+
+
+
 mainWindow = pyglet.window.Window()
 mainGui = glooey.Gui(mainWindow)
 rows = glooey.VBox()
@@ -36,6 +47,9 @@ enterPassword = glooey.Form()
 button = TheButton("Check Password")
 result = Result("")
 
+
+
+
 def buttonClicked(widget):
     if enterPassword.text == "1234" or enterPassword.text == "123456" or enterPassword.text == "12345678" or enterPassword.text == "password" or enterPassword.text == "qwerty":
         Result.custom_color = "ff0000"
@@ -43,9 +57,11 @@ def buttonClicked(widget):
     else:
         Result.custom_color = "00ff00"
         result.set_text("Your password is ok")
-    
 
+frame = SomeFrame()
 
+rows.add(frame)
+rows.add(form)
 rows.add(title)
 rows.add(enterPassword)
 rows.add(button)
