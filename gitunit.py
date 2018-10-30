@@ -59,6 +59,7 @@ def buttonClicked(widget):
     else:
         Result.custom_color = "00ff00"
         result.set_text("Your password is ok")
+    print(enterPassword.text)
 
 def generatePasswordClicked(widget):
     result.set_text(str(random.randint(123456789,999999999)))
