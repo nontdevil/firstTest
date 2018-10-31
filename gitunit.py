@@ -90,4 +90,5 @@ generatePassword.push_handlers(on_click=generatePasswordClicked)
 frame.add(rows)
 
 pyglet.app.run()
-###
+#######
+##
